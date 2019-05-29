@@ -60,4 +60,13 @@ function update() {
 }
 
 update();
-setInterval(update, 2000);
+d3.csv("test.csv").then(function(data) {
+  console.log(data);
+});
+// setInterval(update, 2000);
+
+// d3.csv("sp500.csv", function(data) {
+//   d3.select("#example")
+//       .datum(data)
+//       .call(chart);
+// });
