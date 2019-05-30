@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/vendor.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/vendor.js":
+/*!***********************!*\
+  !*** ./src/vendor.js ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\"Hi, I'm index.js\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("console.log(\"Hi, I'm vendor.js\");\n\n\n//# sourceURL=webpack:///./src/vendor.js?");
 
 /***/ })
 
