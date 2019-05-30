@@ -4,9 +4,10 @@
   "description": "A polar area chart representing a person's health in six areas of life, built with [d3-ez](https://github.com/jamesleesaunders/d3-ez) and based on [an example by James Saunders](http://bl.ocks.org/jamesleesaunders/36ccc5e130948c098209).",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "start": "webpack-dev-server --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,8 @@
   "devDependencies": {
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.32.2",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
