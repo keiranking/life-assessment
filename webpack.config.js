@@ -3,8 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './src/index.js',
-    vendor: './src/vendor.js'
+    main: './src/assets/javascripts/index.js',
+    vendor: './src/assets/javascripts/vendor.js'
   },
   output: {
     filename: '[name].js',
