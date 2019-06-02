@@ -37,7 +37,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'I got titled by Webpack',
+      title: 'Title set in webpack.config.js',
       template: './src/index.html',
       inject: true,
       minify: {

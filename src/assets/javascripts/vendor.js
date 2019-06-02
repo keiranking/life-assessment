@@ -1,1 +1,1 @@
-console.log("Hi, I'm vendor.js");
+console.log("Loaded vendor.js");
