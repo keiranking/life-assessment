@@ -1,6 +1,6 @@
 # Life Assessment
 
-A polar area chart representing a person's health in six areas of life, built with [d3-ez](https://github.com/jamesleesaunders/d3-ez).
+A polar area chart representing a person's health in six areas of life, using [chart.js](https://github.com/chartjs/Chart.js).
 
 ## Setup
 

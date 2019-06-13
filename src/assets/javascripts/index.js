@@ -1,23 +1,49 @@
 import '../stylesheets/test.scss';
 import Chart from 'chart.js';
 
+const COLORS = {
+  // physical: getComputedStyle(document.body).getPropertyValue('--physical'),
+  border: 'rgba(255, 255, 255, 1)',
+  physical: 'rgba(154, 205, 50, 0.75)',
+  financial: 'rgba(65, 105, 225, 0.75)',
+  intellectual: 'rgba(102, 51, 153, 0.75)',
+  emotional: 'rgba(220, 20, 60, 0.75)',
+  social: 'rgba(255, 140, 0, 0.75)',
+  spiritual: 'rgba(255, 215, 0, 0.75)'
+};
+Object.freeze(COLORS);
+
 let ctx = document.getElementById('myChart');
 
 let myChart = new Chart(ctx, {
   type: 'polarArea',
   options: {},
   data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    // labels: [
+    //   'Physical',
+    //   'Financial',
+    //   'Intellectual',
+    //   'Emotional',
+    //   'Social',
+    //   'Spiritual'
+    // ],
     datasets: [{
-      label: '# of Votes',
-      data: [12, 19, 3, 5, 2, 3],
+      // label: 'Amount',
+      data: [
+        95, 10, 75, 75, 10, 100,
+        100, 95, 100, 100, 100, 80,
+        95, 45, 80, 95, 90, 50,
+        50, 50, 50, 50, 70, 100,
+        50, 50, 5, 100, 50, 40,
+        15, 0, 0, 0, 100, 50
+      ],
       backgroundColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
+        COLORS.physical, COLORS.physical, COLORS.physical, COLORS.physical, COLORS.physical, COLORS.physical,
+        COLORS.financial, COLORS.financial, COLORS.financial, COLORS.financial, COLORS.financial, COLORS.financial,
+        COLORS.intellectual, COLORS.intellectual, COLORS.intellectual, COLORS.intellectual, COLORS.intellectual, COLORS.intellectual,
+        COLORS.emotional, COLORS.emotional, COLORS.emotional, COLORS.emotional, COLORS.emotional, COLORS.emotional,
+        COLORS.social, COLORS.social, COLORS.social, COLORS.social, COLORS.social, COLORS.social,
+        COLORS.spiritual, COLORS.spiritual, COLORS.spiritual, COLORS.spiritual, COLORS.spiritual, COLORS.spiritual
       ],
       borderWidth: 0
     }]
