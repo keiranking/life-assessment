@@ -1,4 +1,4 @@
-import '../stylesheets/test.scss';
+import '../stylesheets/app.scss';
 import Chart from 'chart.js';
 
 const COLORS = {
