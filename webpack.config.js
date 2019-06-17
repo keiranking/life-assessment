@@ -32,7 +32,12 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
-          'sass-loader'
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: [require('bourbon').includePaths]
+            }
+          }
         ]
       },
       {
