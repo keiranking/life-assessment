@@ -1,9 +1,6 @@
 @import "bourbon";
 @import "base/base";
 
-$base-heading-color: rebeccapurple;
-
 h1 {
-  color: $base-heading-color;
-  font-family: $font-stack-verdana;
+  font-family: $font-stack-helvetica;
 }

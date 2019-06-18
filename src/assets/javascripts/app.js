@@ -14,6 +14,14 @@ const COLORS = {
 Object.freeze(COLORS);
 
 let ctx = document.getElementById('myChart');
+let data = [
+  95, 10, 75, 75, 10, 100,
+  100, 95, 100, 100, 100, 80,
+  95, 45, 80, 95, 90, 50,
+  50, 50, 50, 50, 70, 100,
+  50, 50, 5, 100, 50, 40,
+  15, 0, 0, 0, 100, 50
+];
 
 let myChart = new Chart(ctx, {
   type: 'polarArea',
@@ -29,14 +37,7 @@ let myChart = new Chart(ctx, {
     // ],
     datasets: [{
       // label: 'Amount',
-      data: [
-        95, 10, 75, 75, 10, 100,
-        100, 95, 100, 100, 100, 80,
-        95, 45, 80, 95, 90, 50,
-        50, 50, 50, 50, 70, 100,
-        50, 50, 5, 100, 50, 40,
-        15, 0, 0, 0, 100, 50
-      ],
+      data: data,
       backgroundColor: [
         COLORS.physical, COLORS.physical, COLORS.physical, COLORS.physical, COLORS.physical, COLORS.physical,
         COLORS.financial, COLORS.financial, COLORS.financial, COLORS.financial, COLORS.financial, COLORS.financial,
@@ -50,4 +51,4 @@ let myChart = new Chart(ctx, {
   }
 });
 
-console.log("Loaded index.js");
+console.log("Loaded app.js");
