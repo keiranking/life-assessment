@@ -1,7 +1,14 @@
 import '../stylesheets/app.scss';
 import Chart from 'chart.js';
 import yaml from 'js-yaml';
-// let fs = require('fs');
+const fs = require('fs');
+
+try {
+  var doc = yaml.safeLoad(fs.readFileSync('/questions.yml', 'utf8'));
+  console.log(doc);
+} catch (e) {
+  console.log(e);
+}
 
 const COLORS = {
   // physical: getComputedStyle(document.body).getPropertyValue('--physical'),
