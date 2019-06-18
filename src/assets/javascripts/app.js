@@ -1,5 +1,7 @@
 import '../stylesheets/app.scss';
 import Chart from 'chart.js';
+import yaml from 'js-yaml';
+// let fs = require('fs');
 
 const COLORS = {
   // physical: getComputedStyle(document.body).getPropertyValue('--physical'),
